@@ -388,3 +388,18 @@ footer p + p {
     }
 
 }
+
+.profile-message {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 50px 30px;
+}
+
+.profile-message h2 {
+    font-size: 28px;
+}
+
+.profile-message p {
+    font-size: 14px;
+    line-height: 2;
+}
