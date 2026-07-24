@@ -1334,3 +1334,323 @@ footer p + p {
     font-size: 11px;
     line-height: 1.8;
 }
+
+/* ==================================================
+   FORMATION PAGE
+================================================== */
+
+.formation-page {
+    width: min(1150px, calc(100% - 50px));
+    margin: 150px auto 0;
+    padding-bottom: 120px;
+}
+
+
+/* ページタイトル */
+
+.formation-heading {
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.formation-release-number {
+    margin: 0 0 12px;
+
+    color: #a491b1;
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+
+.formation-heading h1 {
+    margin: 0;
+
+    font-size: clamp(38px, 6vw, 62px);
+    font-weight: 400;
+    letter-spacing: 6px;
+}
+
+.formation-subtitle {
+    margin: 13px 0 0;
+
+    color: #918997;
+    font-size: 11px;
+    letter-spacing: 5px;
+}
+
+
+/* ステージ全体 */
+
+.formation-stage {
+    padding: 45px 30px 50px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #faf7fc 0%,
+            #ffffff 100%
+        );
+
+    border: 1px solid #ebe5ee;
+    border-radius: 5px;
+}
+
+.stage-label {
+    margin: 0 0 35px;
+
+    color: #bbb3bf;
+    font-size: 9px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.front-label {
+    margin: 35px 0 0;
+}
+
+
+/* 各列 */
+
+.formation-row {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    margin-bottom: 25px;
+}
+
+.formation-row:last-of-type {
+    margin-bottom: 0;
+}
+
+
+/* メンバーカード */
+
+.formation-member {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 155px;
+    min-height: 85px;
+    padding: 14px 8px;
+
+    color: #403947;
+    background: #ffffff;
+
+    border: 1px solid #e3dce7;
+    border-radius: 4px;
+
+    text-align: center;
+    text-decoration: none;
+
+    box-shadow: 0 8px 22px rgba(77, 61, 87, 0.04);
+
+    transition:
+        transform 0.3s,
+        border-color 0.3s,
+        box-shadow 0.3s;
+}
+
+.formation-member:hover {
+    transform: translateY(-4px);
+
+    border-color: #c7b5d2;
+
+    box-shadow: 0 13px 28px rgba(77, 61, 87, 0.1);
+}
+
+.formation-position {
+    margin-bottom: 8px;
+
+    color: #aaa1af;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.formation-member strong {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+/* フロント */
+
+.front-member {
+    min-height: 100px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f9f5fb
+        );
+}
+
+
+/* センター */
+
+.center-member {
+    border: 2px solid #b99dca;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f1e9f6,
+            #ffffff
+        );
+
+    transform: translateY(10px);
+}
+
+.center-member:hover {
+    transform: translateY(6px);
+}
+
+.center-label {
+    margin-bottom: 7px;
+
+    color: #9a74af;
+    font-size: 8px;
+    letter-spacing: 3px;
+}
+
+
+/* フォーメーション情報 */
+
+.formation-information {
+    width: min(720px, 100%);
+    margin: 70px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid #e4dee7;
+    border-bottom: 1px solid #e4dee7;
+}
+
+.formation-information > div {
+    padding: 25px 15px;
+
+    text-align: center;
+}
+
+.formation-information > div:not(:last-child) {
+    border-right: 1px solid #e4dee7;
+}
+
+.formation-information p {
+    margin: 0;
+}
+
+.formation-info-label {
+    margin-bottom: 9px !important;
+
+    color: #a394aa;
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+.formation-information p:last-child {
+    font-size: 13px;
+}
+
+
+/* 下部リンク */
+
+.formation-navigation {
+    margin-top: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.formation-back-link {
+    color: #5f5664;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-decoration: none;
+
+    border-bottom: 1px solid #bcaac6;
+    padding-bottom: 4px;
+}
+
+
+/* スマートフォン */
+
+@media (max-width: 700px) {
+
+    .formation-page {
+        width: calc(100% - 28px);
+        margin-top: 110px;
+        padding-bottom: 85px;
+    }
+
+    .formation-heading {
+        margin-bottom: 45px;
+    }
+
+    .formation-heading h1 {
+        font-size: 35px;
+        letter-spacing: 4px;
+    }
+
+    .formation-stage {
+        overflow-x: auto;
+
+        padding: 35px 14px 40px;
+    }
+
+    .formation-row {
+        min-width: 620px;
+        gap: 9px;
+        margin-bottom: 18px;
+    }
+
+    .formation-member {
+        width: 108px;
+        min-height: 74px;
+        padding: 11px 5px;
+    }
+
+    .front-member {
+        min-height: 88px;
+    }
+
+    .formation-member strong {
+        font-size: 11px;
+    }
+
+    .formation-position {
+        font-size: 8px;
+    }
+
+    .formation-information {
+        margin-top: 50px;
+    }
+
+    .formation-information > div {
+        padding: 20px 5px;
+    }
+
+    .formation-info-label {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+    .formation-information p:last-child {
+        font-size: 11px;
+    }
+
+    .formation-navigation {
+        margin-top: 55px;
+        gap: 20px;
+    }
+
+}
