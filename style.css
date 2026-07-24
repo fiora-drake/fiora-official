@@ -1788,3 +1788,133 @@ footer p + p {
     border: 1px solid #e6dfe9;
     box-shadow: 0 15px 35px rgba(77, 61, 87, 0.1);
 }
+
+.tracklist small {
+    display: block;
+    margin-top: 7px;
+    color: #a08fa8;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.formation-switch {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: -25px auto 55px;
+}
+
+.formation-tab {
+    min-width: 150px;
+    padding: 13px 26px;
+    color: #766d7b;
+    background: #ffffff;
+    border: 1px solid #dcd3e1;
+    border-radius: 100px;
+    font-family: inherit;
+    font-size: 10px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formation-tab:hover,
+.formation-tab.is-active {
+    color: #ffffff;
+    background: #a48bb2;
+    border-color: #a48bb2;
+}
+
+.formation-panel {
+    display: none;
+}
+
+.formation-panel.is-active {
+    display: block;
+    animation: formationFade 0.45s ease;
+}
+
+@keyframes formationFade {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.formation-category-heading {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.formation-category-heading p {
+    margin: 0 0 8px;
+    color: #a18fa9;
+    font-size: 9px;
+    letter-spacing: 4px;
+}
+
+.formation-category-heading h2 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.rise-coming-soon {
+    width: min(760px, 100%);
+    margin: 0 auto;
+    padding: 95px 30px;
+    text-align: center;
+    background:
+        linear-gradient(
+            145deg,
+            #faf7fc,
+            #ffffff
+        );
+    border: 1px solid #e8e1eb;
+}
+
+.rise-coming-soon .rise-label {
+    margin: 0 0 14px;
+    color: #a18fa9;
+    font-size: 9px;
+    letter-spacing: 4px;
+}
+
+.rise-coming-soon h3 {
+    margin: 0 0 22px;
+    color: #625969;
+    font-size: clamp(30px, 5vw, 46px);
+    font-weight: 400;
+    letter-spacing: 6px;
+}
+
+.rise-coming-soon p:last-child {
+    margin: 0;
+    color: #7c747f;
+    font-size: 13px;
+    line-height: 2;
+}
+
+@media (max-width: 700px) {
+
+    .formation-switch {
+        margin-bottom: 40px;
+    }
+
+    .formation-tab {
+        min-width: 125px;
+        padding: 12px 18px;
+        font-size: 9px;
+    }
+
+    .rise-coming-soon {
+        padding: 70px 20px;
+    }
+
+}
