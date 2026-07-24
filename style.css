@@ -846,3 +846,253 @@ footer p + p {
     }
 
 }
+
+/* ==================================================
+   DISCOGRAPHY
+================================================== */
+
+.discography-title {
+    margin: 150px auto 65px;
+    padding: 0 30px;
+
+    text-align: center;
+}
+
+.discography-title p {
+    margin: 0 0 10px;
+
+    color: #a49baa;
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+
+.discography-title h1 {
+    margin: 0;
+
+    font-size: clamp(34px, 5vw, 54px);
+    font-weight: 400;
+    letter-spacing: 8px;
+}
+
+
+/* 絞り込みボタン */
+
+.discography-filter {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    margin-bottom: 70px;
+    padding: 0 24px;
+}
+
+.filter-button {
+    min-width: 105px;
+    padding: 11px 20px;
+
+    color: #746c79;
+    background: #ffffff;
+
+    border: 1px solid #ded8e2;
+    border-radius: 100px;
+
+    font-family: inherit;
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition:
+        color 0.3s,
+        background-color 0.3s,
+        border-color 0.3s;
+}
+
+.filter-button:hover,
+.filter-button.active {
+    color: #ffffff;
+    background: #a994ba;
+    border-color: #a994ba;
+}
+
+
+/* 作品一覧 */
+
+.discography-list {
+    width: min(1000px, calc(100% - 60px));
+    margin: 0 auto;
+    padding-bottom: 130px;
+}
+
+.release-card {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 65px;
+    align-items: center;
+
+    padding: 55px 0;
+
+    border-top: 1px solid #e7e2e9;
+}
+
+.release-card:last-child {
+    border-bottom: 1px solid #e7e2e9;
+}
+
+
+/* ジャケット画像 */
+
+.release-image-link {
+    display: block;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f2edf5,
+            #fcfbfd
+        );
+
+    aspect-ratio: 1 / 1;
+
+    text-decoration: none;
+}
+
+.release-image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s;
+}
+
+.release-image-link:hover .release-image {
+    transform: scale(1.04);
+}
+
+
+/* 作品情報 */
+
+.release-type {
+    margin: 0 0 13px;
+
+    color: #a390b3;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.release-information h2 {
+    margin: 0 0 12px;
+
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.release-information h2 a {
+    color: #302b34;
+    text-decoration: none;
+}
+
+.release-date {
+    margin: 0 0 25px;
+
+    color: #9c959f;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.release-description {
+    margin: 0 0 30px;
+
+    color: #655e69;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.release-detail-button {
+    display: inline-block;
+
+    padding-bottom: 5px;
+
+    color: #514956;
+    border-bottom: 1px solid #b8a9c2;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-decoration: none;
+
+    transition: opacity 0.3s;
+}
+
+.release-detail-button:hover {
+    opacity: 0.5;
+}
+
+
+/* スマートフォン */
+
+@media (max-width: 700px) {
+
+    .discography-title {
+        margin: 110px auto 45px;
+    }
+
+    .discography-title h1 {
+        font-size: 32px;
+        letter-spacing: 5px;
+    }
+
+    .discography-filter {
+        gap: 7px;
+        margin-bottom: 45px;
+    }
+
+    .filter-button {
+        min-width: 88px;
+        padding: 10px 13px;
+        font-size: 9px;
+    }
+
+    .discography-list {
+        width: min(100% - 48px, 500px);
+        padding-bottom: 90px;
+    }
+
+    .release-card {
+        display: block;
+        padding: 45px 0;
+    }
+
+    .release-image-link {
+        width: 78%;
+        max-width: 300px;
+        margin: 0 auto 30px;
+    }
+
+    .release-information {
+        text-align: center;
+    }
+
+    .release-type {
+        font-size: 9px;
+    }
+
+    .release-information h2 {
+        font-size: 24px;
+    }
+
+    .release-date {
+        font-size: 10px;
+    }
+
+    .release-description {
+        font-size: 12px;
+        line-height: 1.9;
+    }
+
+}
