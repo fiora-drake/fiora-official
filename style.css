@@ -403,3 +403,446 @@ footer p + p {
     font-size: 14px;
     line-height: 2;
 }
+
+/* ==================================================
+   FIORA MEMBER PROFILE
+================================================== */
+
+.member-profile-page {
+    margin: 0;
+    color: #29262e;
+    background: #ffffff;
+}
+
+
+/* プロフィール上部 */
+
+.member-hero {
+    width: min(1080px, calc(100% - 80px));
+    margin: 150px auto 100px;
+
+    display: grid;
+    grid-template-columns: minmax(250px, 360px) minmax(0, 1fr);
+    gap: 80px;
+    align-items: center;
+}
+
+
+/* アーティスト写真 */
+
+.member-photo-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-artist-photo {
+    display: block;
+
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+
+    border-radius: 3px;
+    box-shadow: 0 18px 45px rgba(73, 61, 83, 0.09);
+}
+
+
+/* 名前周辺 */
+
+.member-generation {
+    margin: 0 0 18px;
+
+    color: #92899c;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.member-name {
+    margin: 0;
+
+    font-size: clamp(32px, 4vw, 46px);
+    font-weight: 400;
+    letter-spacing: 8px;
+    line-height: 1.4;
+}
+
+.member-name-english {
+    margin: 8px 0 0;
+
+    color: #99919f;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.member-catchphrase {
+    position: relative;
+
+    margin: 38px 0 42px;
+    padding-left: 20px;
+
+    font-size: 15px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+.member-catchphrase::before {
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 0;
+
+    width: 2px;
+    background: #c8b5dc;
+}
+
+
+/* プロフィール */
+
+.official-profile {
+    width: 100%;
+}
+
+.profile-heading {
+    margin: 0 0 14px;
+
+    color: #817889;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.profile-list {
+    margin: 0;
+    border-top: 1px solid #e8e4eb;
+}
+
+.profile-row {
+    display: grid;
+    grid-template-columns: 145px minmax(0, 1fr);
+
+    padding: 14px 4px;
+    border-bottom: 1px solid #e8e4eb;
+}
+
+.profile-row dt,
+.profile-row dd {
+    margin: 0;
+}
+
+.profile-row dt {
+    color: #99919f;
+    font-size: 12px;
+}
+
+.profile-row dd {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* サイリウムカラー */
+
+.penlight-color {
+    display: inline-block;
+
+    width: 11px;
+    height: 11px;
+    margin-right: 5px;
+
+    border: 1px solid #d6d0da;
+    border-radius: 50%;
+
+    vertical-align: -1px;
+}
+
+.penlight-color.lavender {
+    background: #cbb4df;
+}
+
+.penlight-color.white {
+    background: #ffffff;
+}
+
+.color-cross {
+    display: inline-block;
+    margin: 0 8px;
+
+    color: #aaa2ae;
+}
+
+
+/* 共通セクション */
+
+.profile-section {
+    padding: 95px 40px;
+}
+
+.member-section-title {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.member-section-title p {
+    margin: 0 0 8px;
+
+    color: #aaa3ae;
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+
+.member-section-title h2 {
+    margin: 0;
+
+    font-size: 29px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+
+/* Q&A */
+
+.member-question-section {
+    background: #ffffff;
+}
+
+.question-list {
+    width: min(780px, 100%);
+    margin: 0 auto;
+
+    border-top: 1px solid #e8e4eb;
+}
+
+.question-item {
+    padding: 28px 8px;
+    border-bottom: 1px solid #e8e4eb;
+}
+
+.question-item h3,
+.question-item p {
+    margin: 0;
+}
+
+.question-item h3 {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.9;
+}
+
+.question-item p {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+
+    margin-top: 10px;
+
+    color: #5c5660;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.question-item h3 span,
+.question-item p span {
+    color: #a28db8;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+}
+
+
+/* メッセージ */
+
+.member-message-section {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(204, 185, 222, 0.14),
+            rgba(255, 255, 255, 0.75)
+        );
+}
+
+.member-message-text {
+    width: min(700px, 100%);
+    margin: 0 auto;
+}
+
+.member-message-text p {
+    margin: 0 0 24px;
+
+    font-size: 14px;
+    line-height: 2.35;
+    letter-spacing: 0.5px;
+}
+
+.member-message-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* 前後のメンバーへ移動 */
+
+.member-page-navigation {
+    width: min(850px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 80px 0 110px;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+.member-page-navigation a,
+.member-page-navigation span {
+    color: #49424e;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.member-page-link:last-child {
+    justify-self: end;
+}
+
+.members-list-link {
+    padding: 12px 26px;
+
+    border: 1px solid #dcd5e1;
+    border-radius: 100px;
+
+    transition:
+        background-color 0.3s,
+        border-color 0.3s;
+}
+
+.members-list-link:hover {
+    background: #f5f0f8;
+    border-color: #cbbbd5;
+}
+
+.member-page-link {
+    transition: opacity 0.3s;
+}
+
+.member-page-link:hover {
+    opacity: 0.55;
+}
+
+.member-page-link.disabled {
+    color: #cbc6ce;
+    pointer-events: none;
+}
+
+
+/* スマートフォン */
+
+@media (max-width: 700px) {
+
+    .member-hero {
+        width: min(100% - 48px, 500px);
+        margin: 110px auto 65px;
+
+        display: block;
+    }
+
+    .member-artist-photo {
+        width: 68%;
+        max-width: 250px;
+        margin: 0 auto 45px;
+    }
+
+    .member-generation {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .member-name {
+        font-size: 31px;
+        letter-spacing: 5px;
+    }
+
+    .member-name-english {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .member-catchphrase {
+        margin: 30px 0 36px;
+
+        font-size: 13px;
+    }
+
+    .profile-row {
+        grid-template-columns: 110px minmax(0, 1fr);
+        padding: 12px 2px;
+    }
+
+    .profile-row dt,
+    .profile-row dd {
+        font-size: 12px;
+    }
+
+    .profile-section {
+        padding: 70px 24px;
+    }
+
+    .member-section-title {
+        margin-bottom: 35px;
+    }
+
+    .member-section-title h2 {
+        font-size: 25px;
+    }
+
+    .question-item {
+        padding: 23px 0;
+    }
+
+    .question-item h3,
+    .question-item p {
+        grid-template-columns: 30px 1fr;
+        font-size: 13px;
+    }
+
+    .member-message-text p {
+        font-size: 13px;
+        line-height: 2.2;
+    }
+
+    .member-page-navigation {
+        width: calc(100% - 40px);
+        padding: 60px 0 85px;
+    }
+
+    .member-page-navigation a,
+    .member-page-navigation span {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .members-list-link {
+        padding: 10px 17px;
+    }
+
+}
+
+
+/* 小さいスマートフォン */
+
+@media (max-width: 400px) {
+
+    .member-artist-photo {
+        width: 75%;
+    }
+
+    .member-name {
+        font-size: 28px;
+    }
+
+    .profile-row {
+        grid-template-columns: 100px minmax(0, 1fr);
+    }
+
+}
