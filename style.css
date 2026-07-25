@@ -387,3 +387,86 @@ header{padding:15px 20px}nav{gap:10px}nav a{font-size:9px;letter-spacing:1px}.se
         margin-bottom: 24px;
     }
 }
+
+/* ==================================================
+   1ST ALBUM FORMATION
+================================================== */
+
+.album-third-row,
+.album-second-row,
+.album-first-row {
+    min-width: max-content;
+}
+
+
+/* 3列目 13人 */
+
+.album-third-row {
+    gap: 10px;
+}
+
+.album-third-row .formation-member-photo {
+    width: 76px;
+}
+
+.album-third-row .formation-member-photo img {
+    width: 64px;
+    height: 84px;
+}
+
+.album-third-row .formation-member-photo strong {
+    font-size: 8px;
+}
+
+
+/* 2列目 10人 */
+
+.album-second-row {
+    gap: 14px;
+}
+
+.album-second-row .formation-member-photo {
+    width: 88px;
+}
+
+.album-second-row .formation-member-photo img {
+    width: 74px;
+    height: 96px;
+}
+
+.album-second-row .formation-member-photo strong {
+    font-size: 9px;
+}
+
+
+/* 1列目 7人 */
+
+.album-first-row {
+    gap: 18px;
+}
+
+.album-first-row .formation-member-photo {
+    width: 105px;
+}
+
+.album-first-row .formation-member-photo img {
+    width: 90px;
+    height: 118px;
+}
+
+.album-first-row .formation-member-photo strong {
+    font-size: 10px;
+}
+
+
+/* スマホ */
+
+@media (max-width: 700px) {
+
+    .album-third-row,
+    .album-second-row,
+    .album-first-row {
+        justify-content: flex-start;
+    }
+
+}
