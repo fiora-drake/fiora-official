@@ -474,3 +474,7 @@ header{padding:15px 20px}nav{gap:10px}nav a{font-size:9px;letter-spacing:1px}.se
 .third-generation{background:linear-gradient(180deg,#fff 0%,#f6f2f8 100%);max-width:none;padding-left:10%;padding-right:10%}
 .third-generation .member-card{background:rgba(255,255,255,.92)}
 .third-generation .member-card:hover{border-color:#c9b6d3}
+
+.fourth-generation{max-width:none;padding-left:10%;padding-right:10%;background:linear-gradient(180deg,#f7f5fa 0%,#eef5f8 55%,#fff 100%);}
+.fourth-generation .member-card{background:rgba(255,255,255,.94);border-color:#e1dfe9;}
+.fourth-generation .member-card:hover{border-color:#b9b1cc;box-shadow:0 12px 28px rgba(78,70,98,.10);}
